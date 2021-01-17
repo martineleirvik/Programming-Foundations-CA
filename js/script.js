@@ -16,7 +16,7 @@ console.log(outOfStock);
 //question 2
 
 for (var i = 15; i<=25; i++) {
-    if (i === 17, i===20) {
+    if (i === 17 && i===20) {
     console.log(i);
     }
 }
@@ -35,7 +35,7 @@ var games = [
 	},
 	{
 		title: "Team Fortress",
-		rating: null,
+		rating: undefined,
 	},
 	{
 		title: "The Witcher",
@@ -46,6 +46,7 @@ var games = [
 		rating: 2.9,
 	},
 ];
+
 
 
 for (var i = 0; i < games.length; i++) {
@@ -76,6 +77,35 @@ function logTwoArguments(yes, no) {
 }
 
 logTwoArguments(2, 8);
+
+
+
+// question 6
+
+var title = document.querySelector("title");
+var button = document.querySelector(".page");
+var body = document.querySelector("body");
+var heading = document.querySelector("h1");
+
+
+
+function changedTitle() {
+	title.innerHTML = "Updated title";
+	body.style.backgroundColor = "yellow";
+	heading.style.backgroundColor = "green";
+	heading.style.fontFamily = "impact";
+	
+
+}
+
+button.onclick = changedTitle;
+
+
+
+
+
+// question 7
+
 
 
 
