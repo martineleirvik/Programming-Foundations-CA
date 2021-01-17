@@ -60,27 +60,6 @@ for (var i = 0; i < games.length; i++) {
 
 //question 4
 
-var whatIDontLike = "bugs";
-
-if (typeof val === "string") {
-    console.log("Variable is a string");
-} else {
-    console.log("Variable is not a string");
-}
-
-
-
-function whatIDontLike(bugs) {
-	var typeofFirst = typeof bugs;
-	
-	// if (typeofFirst ! =="string") {
-		return "Please send in a string"
-	}
-
-	// return bugs;
-// }
-
-
 
 
 
@@ -94,9 +73,14 @@ function addition(num1, num2) {
 		return "Invalid argument(s)";
 	}
 
-	return convertedNum1 + convertedNum2;
+	return convertedNum2 - convertedNum1;
 }
 
+var subtraction  = document.querySelector('#subtraction');
+
+var sum = addition(7, true)
+
+subtraction.innerHTML = sum;
 
 
 // question 6
@@ -111,7 +95,7 @@ var remove = document.querySelector("ul");
 function changedTitle() {
 	title.innerHTML = "Updated title";
 	body.style.backgroundColor = "yellow";
-	heading.style.backgroundColor = "green";
+	heading.style.color = "green";
 	heading.style.fontFamily = "impact";
 	heading.innerHTML = "<a href='#'>" + heading.innerHTML + "<a>";
 	remove.style.padding = "none";
@@ -145,16 +129,9 @@ var toys = [
 
 var button = document.querySelector(".price");
 
-function loopToys() {
-	title.innerHTML = "Updated title";
+button.onclick = function() {
+	for (var i = 0; i < toys.length; i++) {
+		var toys = toys[i].price;
+		console.log(toys);
+	}
 }
-
-button.onclick = loopToys;
-
-
-for (var i = 0; i < toys.length; i++) {
-    console.log(toys[i]);
-}
-
-
-
